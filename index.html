@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Weather Dashboard</h1>
-        </div>
-    </div>
+
+    <!-- Site Header -->
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
 
     <main>
         <div class="row">
-            <div class="col-4">
-                <div class="container-fluid">
+            <div class="col-4 p-0 search-container">
+                <div class="container">
                     <!-- City Search Form -->
                     <form>
-                        <label for="city-search-field">Search for a City:</label>
+                        <h5>Search for a City:</h5>
                             
                         <div class="input-group">
                             <input type="text" id="city-search-field" name="city-search-field" class="form-control" placeholder="Enter city name"/>
@@ -30,19 +30,19 @@
                         </div>
                     </form> 
                     <!-- City Search History -->
-                    <div class="p-15" id="search-history">
-
+                    <div class="search-history" id="search-history">
+                        
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-8 p-0 ">
                 <div class="container-fluid" id="weather-results-container">
-                    <div class="card" id="current-day-card">
-                        <div class="card-body" id="current-day-card-body">
+                    <div class="card div-top-margin" id="current-day-card">
+                        <div class="card-body " id="current-day-card-body">
                             <h2>Search a city to view the current and future weather conditions.</h2>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-around" id="five-day-forcast-container">
+                    <div class="div-top-margin" id="five-day-forcast-container">
     
                     </div>
                 </div>
