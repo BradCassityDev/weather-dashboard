@@ -13,6 +13,12 @@ var searchHistory = JSON.parse(localStorage.getItem("weatherSearchHistory")) || 
 var addCitySearchHistory = function(city) {
     // add city to current array
     searchHistory.unshift({"cityName":city});
+
+    // If array has more than 10 items, remove the extra
+    if(searchHistory.length > 10) {
+        searchHistory.splice(10, searchHistory.length);
+    }
+
     // reset localStorage with new adjusted array
     localStorage.setItem("weatherSearchHistory", JSON.stringify(searchHistory));
     // reload history on window

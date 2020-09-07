@@ -6,3 +6,35 @@ body {
 .row {
     margin: 0px;
 }
+header {
+    text-align: center;
+    background-color: #343A40;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.search-container {
+    background-color: #F8F9FA;
+}
+.search-history {
+    margin: 15px 0;
+}
+.search-history-items:hover {
+    cursor: pointer;
+    color: #007bff;
+}
+.weather-results-container {
+    margin: 15px 0;
+}
+.div-top-margin {
+    margin: 15px 0;
+}
+.weather-card {
+    max-width: 200px;
+    min-width: 100px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+.daily-date {
+    font-size: 1.2em;
+    font-weight: bold;
+}
