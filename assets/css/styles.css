@@ -1,40 +1,59 @@
+/* Prepping document with body default styles */
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* changing row default margin to 0 */
 .row {
     margin: 0px;
 }
+/* header styles */
 header {
     text-align: center;
     background-color: #343A40;
     color: #FFFFFF;
     padding: 10px;
 }
+/* Adding margin above form */
+form {
+    margin-top: 10px;
+}
+/* Left column search container background */
 .search-container {
     background-color: #F8F9FA;
 }
+/* Adding margins to search history */
 .search-history {
     margin: 15px 0;
 }
+/* Changing search history item styles on hover */
 .search-history-items:hover {
     cursor: pointer;
     color: #007bff;
 }
+/* Right column weather results margin */
 .weather-results-container {
     margin: 15px 0;
 }
+/* Five day forcast weather card styles */
+.weather-card {
+    max-width: 150px;
+    min-width: 150px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    margin: 0;
+}
+/* Daily date text in 5 day forcaset */
+.daily-date {
+    font-size: 1em;
+    font-weight: bold;
+}
+/* Adding top margin to container objects */
 .div-top-margin {
     margin: 15px 0;
 }
-.weather-card {
-    max-width: 200px;
-    min-width: 100px;
-    background-color: #007BFF;
+.uv-span {
+    padding: 5px;
     color: #FFFFFF;
-}
-.daily-date {
-    font-size: 1.2em;
-    font-weight: bold;
 }
